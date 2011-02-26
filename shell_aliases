@@ -1,0 +1,31 @@
+alias ls='ls -G'
+#alias dir='dir --color=auto'
+#alias vdir='vdir --color=auto'
+
+#alias grep='grep --color=auto'
+#alias fgrep='fgrep --color=auto'
+#alias egrep='egrep --color=auto'
+
+# some more ls aliases
+alias ll='ls -l'
+#alias la='ls -A'
+#alias l='ls -CF'
+
+alias ..='cd ..'
+alias cd..='cd ..'
+alias ...='cd ../..'
+
+alias gvim='mvim'
+
+alias bpython2.7='PYTHONPATH=~/python/bpython python2.7 -m bpython.cli'
+alias bpython2.6='PYTHONPATH=~/python/bpython python2.6 -m bpython.cli'
+alias bpython3.1='PYTHONPATH=~/python/bpython python3.1 -m bpython.cli'
+#alias bpython=bpython2.7
+alias bpython='bpython-urwid'
+
+alias get_wtfpl='wget http://sam.zoy.org/wtfpl/COPYING'
+alias get_distribute_setup.py='wget http://python-distribute.org/distribute_setup.py'
+
+alias sync_music='unison Music/songbird/ /Volumes/Daten/Musik -auto -perms 0 -ignore "Name .DS_Store"'
+
+alias init_project='touch README setup.py MANIFEST.in tox.ini && mkdir test && get_wtfpl'

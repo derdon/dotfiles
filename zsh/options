@@ -1,0 +1,46 @@
+# some standard options which *must* be set
+setopt no_beep auto_cd complete_in_word correct rm_star_wait
+
+# complete as much of a completion until it gets ambiguous
+# (http://zshwiki.org/home/options/comp)
+setopt list_ambiguous
+
+# I installed the mighty ZSH, so I don't want to do things by halves!
+# ZSH without extended globbing is like beer without alcohol...
+setopt extended_glob
+
+# print an error if a pattern or glob is invalid
+setopt bad_pattern
+
+# enable brace expansion
+setopt brace_ccl
+
+# convert the equal sign to a handy shortcut for the shell-builtin `which`
+setopt equals
+
+# enable multiple output redirection,
+# e.g. ``suptime > uptime0.txt > uptime1.txt``
+setopt multios
+
+# allow short loop forms like ``for i in 1..10; print i``
+setopt shortloops
+
+# push the visited dirs automatically to the dir stack
+setopt auto_pushd
+
+# do not overwrite new entries, but append them to the history file
+setopt append_history
+
+# save and fetch the entries of multiple instances of the ZSH correctly
+setopt extended_history
+
+# don't save commands in the history where the history itself is read or
+# modified
+setopt hist_no_store
+
+# remove blanks in history entries at the end and beginning of the entry and
+# summarize multiple blanks to one if they are not located within quotes
+setopt hist_reduce_blanks
+
+# avoid saving duplicated entries in the history
+setopt hist_ignore_all_dups
