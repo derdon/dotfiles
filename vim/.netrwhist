@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/simon/python/swsg/themes/bottlepost/static/css/screen'
 let g:netrw_dirhist_2='/Users/simon/.vim/plugin'
 let g:netrw_dirhist_3='/Users/simon/.vim'
 let g:netrw_dirhist_4='/Users/simon/.vim/autoload'
 let g:netrw_dirhist_5='/Users/simon/python/roundy'
 let g:netrw_dirhist_6='/Users/simon/python/battleship/test'
+let g:netrw_dirhist_7='/Users/simon/python/euler-solutions'
