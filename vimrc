@@ -245,3 +245,13 @@ set grepprg=grep\ -nH\ $*
 " OPTIONAL: This enables automatic indentation as you type.
 filetype indent on
 " LaTeX-Suite END
+
+" toggle the tagbar window with F5
+nnoremap <silent> <F5> :TagbarToggle<CR>
+
+" By default the tagbar window is opened on the right side. Use this option to
+" open it on the left instead.
+let g:tagbar_left = 1
+
+" sort the tagbar window by their place in the file, not alphabetically
+let g:tagbar_sort = 0
