@@ -255,3 +255,6 @@ let g:tagbar_left = 1
 
 " sort the tagbar window by their place in the file, not alphabetically
 let g:tagbar_sort = 0
+
+" open the buffer list via F9
+map <silent> <F9> :call BufferList()<CR>
