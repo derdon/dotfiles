@@ -246,8 +246,8 @@ set grepprg=grep\ -nH\ $*
 filetype indent on
 " LaTeX-Suite END
 
-" toggle the tagbar window with F5
-nnoremap <silent> <F5> :TagbarToggle<CR>
+" toggle the tagbar window with F8
+nnoremap <silent> <F8> :TagbarToggle<CR>
 
 " By default the tagbar window is opened on the right side. Use this option to
 " open it on the left instead.
