@@ -258,3 +258,9 @@ let g:tagbar_sort = 0
 
 " open the buffer list via F9
 map <silent> <F9> :call BufferList()<CR>
+
+" open project window via F10
+map <silent> <F10> :Project<CR>
+
+" use a better window width for the project window
+let g:proj_window_width = 40
