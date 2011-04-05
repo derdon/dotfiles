@@ -1,0 +1,26 @@
+chef=~/python/chef CD=. {
+  root=. {
+    TODO
+    ROADMAP
+    tox.ini
+    setup.py
+  }
+  source=chef {
+    parser.py
+    validators.py
+    interpreter.py
+    syntax_errors.py
+    runtime_errors.py
+    datastructures.py
+    utils.py
+  }
+  tests=chef/tests {
+    conftest.py
+    utils.py
+    test_parser.py
+    test_validators.py
+    test_interpreter.py
+    test_datastructures.py
+    test_utils.py
+  }
+}
