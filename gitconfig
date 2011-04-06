@@ -1,0 +1,5 @@
+[user]
+	name = derdon
+	email = liedtke.simon@googlemail.com
+[merge]
+	tool = vimdiff
