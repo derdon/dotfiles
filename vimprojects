@@ -3,6 +3,7 @@ chef=~/python/chef CD=. {
     TODO
     ROADMAP
     tox.ini
+    .coveragerc
     setup.py
   }
   source=chef {
@@ -22,5 +23,74 @@ chef=~/python/chef CD=. {
     test_interpreter.py
     test_datastructures.py
     test_utils.py
+  }
+}
+smaug=~/python/smaug CD=. {
+  root=. {
+      setup.py
+      tox.ini
+      .coveragerc
+      README
+  }
+  scripts=scripts {
+      smaug_lexer.py
+  }
+  src=smaug {
+      __init__.py
+      lexer.py
+      exceptions.py
+      utils.py
+  }
+  tests=smaug/tests {
+      __init__.py
+      conftest.py
+      utils.py
+      test_lexer.py
+      test_exceptions.py
+  }
+  examples=examples {
+      helloworld.smaug
+  }
+  doc=doc {
+    source=source {
+      index.rst
+      tutorial.rst
+      features.rst
+      examples.rst
+      stdlib.rst
+      grammar.rst
+      notes.rst
+      plans.rst
+      qa.rst
+    }
+    configuration=source {
+      conf.py
+    }
+  }
+}
+roundy=~/python/roundy CD=. {
+  root=. {
+    roundy.py
+    logic.py
+    setup.py
+    tox.ini
+    TODO
+    README
+  }
+  examples=. {
+    examplefile
+    logicalfile
+  }
+  test=test {
+    test_cli.py
+    test_tokens.py
+  }
+blog=~/repos/blog CD=. {
+  root=. {
+    Makefile
+    conf.py
+  }
+  sources=sources {
+    watchdog.rst
   }
 }
