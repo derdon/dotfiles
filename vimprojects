@@ -85,6 +85,7 @@ roundy=~/python/roundy CD=. {
     test_cli.py
     test_tokens.py
   }
+}
 blog=~/repos/blog CD=. {
   root=. {
     Makefile
