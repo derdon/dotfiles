@@ -70,8 +70,6 @@ smaug=~/python/smaug CD=. {
 }
 roundy=~/python/roundy CD=. {
   root=. {
-    roundy.py
-    logic.py
     setup.py
     tox.ini
     TODO
@@ -81,7 +79,11 @@ roundy=~/python/roundy CD=. {
     examplefile
     logicalfile
   }
-  test=test {
+  source=roundy {
+    roundy.py
+    logic.py
+  }
+  test=roundy/test {
     test_cli.py
     test_tokens.py
   }
