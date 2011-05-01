@@ -93,5 +93,6 @@ blog=~/repos/blog CD=. {
   }
   sources=sources {
     watchdog.rst
+    about-blog.rst
   }
 }
