@@ -75,12 +75,18 @@ roundy=~/python/roundy CD=. {
     TODO
     README
   }
+  scripts=scripts {
+    roundy
+  }
   examples=. {
     examplefile
     logicalfile
   }
   source=roundy {
-    roundy.py
+    __init__.py
+    cli.py
+    parser.py
+    formatting.py
     logic.py
   }
   test=roundy/test {
@@ -88,7 +94,7 @@ roundy=~/python/roundy CD=. {
     test_tokens.py
   }
 }
-blog=~/repos/blog CD=. {
+blog=~/repos/derdon.github.com/blog CD=. {
   root=. {
     Makefile
     conf.py
