@@ -29,3 +29,6 @@ alias get_distribute_setup.py='wget http://python-distribute.org/distribute_setu
 alias sync_music='unison Music/songbird/ /Volumes/Daten/Musik -auto -perms 0 -ignore "Name .DS_Store"'
 
 alias init_project='touch README setup.py MANIFEST.in tox.ini && mkdir test && get_wtfpl'
+
+# set some useful default options for virtualenv
+alias virtualenv='virtualenv --distribute --no-site-packages'
