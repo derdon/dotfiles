@@ -30,5 +30,8 @@ alias sync_music='unison Music/songbird/ /Volumes/Daten/Musik -auto -perms 0 -ig
 
 alias init_project='touch README setup.py MANIFEST.in tox.ini && mkdir test && get_wtfpl'
 
+# do not output the commands being executed
+alias make='make -s'
+
 # set some useful default options for virtualenv
 alias virtualenv='virtualenv --distribute --no-site-packages'
