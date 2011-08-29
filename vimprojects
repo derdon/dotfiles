@@ -98,13 +98,39 @@ roundy=~/python/roundy CD=. {
     test_tokens.py
   }
 }
-blog=~/repos/derdon.github.com/blog CD=. {
+blog=~/repos/blog CD=. {
   root=. {
     Makefile
     conf.py
   }
+  theme=my_theme {
+    root=. {
+      TODO
+    }
+    css=static/css {
+      main.css
+      layout.css
+      colors.css
+      nav.css
+      content.css
+      pygments.css
+    }
+    templates=templates {
+      base.html
+      index.html
+      page.html
+      article.html
+      category.html
+      categories.html
+      archives.html
+      tag.html
+      tags.html
+      comments.html
+      disqus_script.html
+    }
+  }
   sources=sources {
     watchdog.rst
-    about-blog.rst
+    pelican-custom-pygments.rst
   }
 }
