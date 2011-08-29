@@ -1,12 +1,16 @@
 chef=~/python/chef CD=. {
   root=. {
     TODO
+    README
     ROADMAP
+    MANIFEST
+    pytest.ini
     tox.ini
     .coveragerc
     setup.py
   }
   source=chef {
+    __init__.py
     parser.py
     validators.py
     interpreter.py
