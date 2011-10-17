@@ -12,4 +12,7 @@ PATH="/usr/local/bin:${PATH}"
 # to include MacTex's binaries in PATH
 PATH="${PATH}:/usr/local/texlive/2010/bin/x86_64-darwin"
 
+# for the binaries from the Go project
+PATH="${PATH}:~/repos/go/bin"
+
 export PATH
