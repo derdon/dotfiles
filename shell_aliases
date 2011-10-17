@@ -35,3 +35,6 @@ alias make='make -s'
 
 # set some useful default options for virtualenv
 alias virtualenv='virtualenv --distribute --no-site-packages'
+
+# filter out *.pyc files in the output of the tree command
+alias tree='tree -I \*.pyc'
