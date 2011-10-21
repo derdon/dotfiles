@@ -160,7 +160,7 @@ autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 " go support
 " ----------
 autocmd BufNewFile,BufRead *.go setlocal ft=go
-autocmd FileType go setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
+"autocmd FileType go setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
 
 " php support
 " -----------
