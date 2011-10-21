@@ -12,7 +12,14 @@ PATH="/usr/local/bin:${PATH}"
 # to include MacTex's binaries in PATH
 PATH="${PATH}:/usr/local/texlive/2010/bin/x86_64-darwin"
 
+# set some env vars for go
+export GOROOT=$HOME/repos/go
+export GOBIN=$GOROOT/bin
+export GOARCH=386
+# XXX: change this value after switching to a different OS!
+export GOOS=darwin
+
 # for the binaries from the Go project
-PATH="${PATH}:/Users/simon/repos/go/bin"
+PATH="${PATH}:${GOBIN}"
 
 export PATH
