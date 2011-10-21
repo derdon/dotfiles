@@ -38,3 +38,8 @@ alias virtualenv='virtualenv --distribute --no-site-packages'
 
 # filter out *.pyc files in the output of the tree command
 alias tree='tree -I \*.pyc'
+
+# a shortcut to create an executable binary out of a single *.go file
+function rungo() {
+	6g -o a.6 $1 && 6l -o a.out a.6 && ./a.out && rm a.6 a.out
+}
