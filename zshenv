@@ -22,4 +22,8 @@ export GOOS=darwin
 # for the binaries from the Go project
 PATH="${PATH}:${GOBIN}"
 
+GAE_PATH="${HOME}/Downloads/google_appengine/google/appengine/tools"
+
+PATH=${GAE_PATH}:${PATH}
+
 export PATH
