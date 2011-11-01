@@ -134,3 +134,34 @@ blog=~/repos/blog CD=. {
     pelican-custom-pygments.rst
   }
 }
+recipeportal=~/repos/language-specific CD=. {
+  root=. {
+    LICENSE
+    Makefile
+    NOTES.rst
+    README
+    ROADMAP
+    TODO.rst
+    app.yaml
+  }
+  recipeportal=recipeportal {
+    model.go
+    portal.go
+    templateHelpers.go
+  }
+  static=static {
+    recipes.json
+    style.css
+  }
+  templates=templates {
+    header.html
+    index.html
+    login.html
+    manage.html
+    nav.html
+    overview.html
+    post.html
+    pre.html
+    search.html
+  }
+}
