@@ -1,4 +1,4 @@
-Python=~/repos/language-specific/python CD=. {
+Python=~/repos/lang-specific/python CD=. {
   chef=chef {
     root=. {
       TODO
@@ -136,7 +136,7 @@ blog=~/repos/general/blog CD=. {
     pelican-custom-pygments.rst
   }
 }
-recipeportal=~/repos/language-specific CD=. {
+recipeportal=~/repos/lang-specific CD=. {
   root=. {
     LICENSE
     Makefile
