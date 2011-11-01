@@ -136,7 +136,7 @@ blog=~/repos/general/blog CD=. {
     pelican-custom-pygments.rst
   }
 }
-recipeportal=~/repos/lang-specific CD=. {
+recipeportal=~/repos/lang-specific/go/recipeportal CD=. {
   root=. {
     LICENSE
     Makefile
