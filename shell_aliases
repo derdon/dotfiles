@@ -34,9 +34,6 @@ alias init_project='touch README setup.py MANIFEST.in tox.ini && mkdir test && g
 # do not output the commands being executed
 alias make='make -s'
 
-# set some useful default options for virtualenv
-alias virtualenv='virtualenv --distribute --no-site-packages'
-
 # filter out *.pyc files in the output of the tree command
 alias tree='tree -I \*.pyc'
 
