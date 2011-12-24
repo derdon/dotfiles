@@ -16,7 +16,7 @@ PATH="${PATH}:/usr/local/texlive/2010/bin/x86_64-darwin"
 export GOROOT=$HOME/repos/cloneonly/go
 export GOPATH=$GOROOT
 export GOBIN=$GOROOT/bin
-export GOARCH=386
+export GOARCH=amd64
 # XXX: change this value after switching to a different OS!
 export GOOS=darwin
 
