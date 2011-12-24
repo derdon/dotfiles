@@ -15,7 +15,8 @@ alias ..='cd ..'
 alias cd..='cd ..'
 alias ...='cd ../..'
 
-alias gvim='mvim'
+alias vi=vim
+alias gvim=mvim
 
 alias bpython2.7='PYTHONPATH=~/repos/cloneonly/bpython python2.7 -m bpython.cli'
 alias bpython2.6='PYTHONPATH=~/repos/cloneonly/bpython python2.6 -m bpython.cli'
