@@ -266,4 +266,4 @@ map <silent> <F10> :Project<CR>
 let g:proj_window_width = 40
 
 " outputs something like "OK: 42 passed"
-command GoTest echo system('gotest 2>&1 | tail -n 2 | head -n 1')
+command GoTest echo system("gotest 2>&1 | egrep '^(OOPS|OK): '")
