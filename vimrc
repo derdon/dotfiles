@@ -264,3 +264,6 @@ map <silent> <F10> :Project<CR>
 
 " use a better window width for the project window
 let g:proj_window_width = 40
+
+" outputs something like "OK: 42 passed"
+command GoTest echo system('gotest 2>&1 | tail -n 2 | head -n 1')
