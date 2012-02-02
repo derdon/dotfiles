@@ -24,8 +24,9 @@ alias bpython3.1='PYTHONPATH=~/repos/cloneonly/bpython python3.1 -m bpython.cli'
 #alias bpython=bpython2.7
 alias bpython='bpython-urwid'
 
-# use distribute instead of setuptools by default
-alias virtualenv='virtualenv --distribute'
+# use distribute instead of setuptools and don't use the modules from the
+# global site-packages dir by default
+alias virtualenv='virtualenv --distribute --no-site-packages'
 
 alias go-repl='rlwrap repl'
 
