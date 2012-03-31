@@ -9,6 +9,9 @@ PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 # to make homebrew happy
 PATH="/usr/local/bin:${PATH}" 
 
+# to make macports happy (I hate doing this btw)
+PATH="/opt/local/bin:/opt/local/sbin:${PATH}"
+
 # to include MacTex's binaries in PATH
 PATH="${PATH}:/usr/local/texlive/2010/bin/x86_64-darwin"
 
