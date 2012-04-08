@@ -40,3 +40,6 @@ compctl -g "*.go" gofmt
 # gccgo
 compctl -g "*.go" gccgo
 # end of paste
+
+# start the virtualenvwrapper tool directly after launching a new shell
+source /Library/Frameworks/Python.framework/Versions/2.7/bin/virtualenvwrapper.sh
