@@ -1,0 +1,34 @@
+directory structure for repos:
+
+├── general
+│   ├── blog
+│   │   ├── category
+│   │   ├── drafts
+│   │   ├── feeds
+│   │   ├── my_theme
+│   │   ├── sources
+│   │   └── theme
+│   ├── dotfiles
+│   │   ├── vim
+│   │   └── zsh
+│   └── euler-solutions
+├── go
+│   ├── 3rdparty
+│   │   ├── pkg
+│   │   └── src
+│   ├── go
+│   │   ├── api
+│   │   ├── bin
+│   │   ├── doc
+│   │   ├── include
+│   │   ├── lib
+│   │   ├── misc
+│   │   ├── pkg
+│   │   ├── src
+│   │   └── test
+│   └── own
+│       ├── pkg
+│       └── src
+└── python
+    ├── 3rdparty
+    └── own
