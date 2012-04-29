@@ -11,6 +11,7 @@ directory structure for repos:
 │   ├── dotfiles
 │   │   ├── vim
 │   │   └── zsh
+│   ├── hodgepodge
 │   └── euler-solutions
 ├── go
 │   ├── 3rdparty
