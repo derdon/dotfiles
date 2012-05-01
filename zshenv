@@ -19,14 +19,12 @@ PATH="${PATH}:/usr/local/texlive/2010/bin/x86_64-darwin"
 
 # set some env vars for go
 export GOROOT=$HOME/repos/go/go
-export GOPATH=$HOME/repos/go/3rdparty:$HOME/repos/go/own
-export GOBIN=$GOROOT/bin
-export GOARCH=amd64
-# XXX: change this value after switching to a different OS!
-export GOOS=darwin
+EXTGO="${HOME}/repos/go/3rdparty"
+OWNGO="${HOME}/repos/go/own"
+export GOPATH="${EXTGO}:${OWNGO}"
 
 # for the binaries from the Go project
-PATH="${PATH}:${GOBIN}"
+PATH="${PATH}:${GOROOT}/bin:${EXTGO}/bin:${OWNGO}/bin"
 
 GAE_PATH="${HOME}/Downloads/google_appengine"
 
