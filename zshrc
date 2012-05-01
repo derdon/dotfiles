@@ -10,7 +10,7 @@ autoload -Uz vcs_info
 source ~/.zsh/options
 source ~/.zsh/aliases
 
-export EDITOR=mvim
+export EDITOR=vim
 export PAGER=less
 
 HISTFILE=~/.zsh_history
