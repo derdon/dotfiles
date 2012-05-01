@@ -31,3 +31,5 @@ GAE_PATH="${HOME}/Downloads/google_appengine"
 PATH=${GAE_PATH}:${PATH}
 
 export PATH
+
+export LANG="de_DE.utf8"
