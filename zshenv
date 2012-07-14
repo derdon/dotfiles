@@ -1,5 +1,9 @@
 export WORKON_HOME="~/venvs"
 
+# I don't know why, but for any reason /sbin isn't in $PATH bed default.
+# Let's fix this!
+PATH="/sbin:${PATH}"
+
 # Setting PATH for Python 3.1
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.1/bin:${PATH}"
