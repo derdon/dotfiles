@@ -1,5 +1,6 @@
 # mac uses -G, linux uses --color for colored output of ls
-[[ uname -eq 'Darwin' ]] && alias ls='ls -G' || alias ls='ls --color=auto'
+[[ "`uname`" == 'Darwin' ]] && alias ls='ls -G' || alias ls='ls --color=auto'
+
 #alias dir='dir --color=auto'
 #alias vdir='vdir --color=auto'
 
