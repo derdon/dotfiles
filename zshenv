@@ -2,7 +2,7 @@ export WORKON_HOME="~/venvs"
 
 export SHELL="/usr/bin/zsh"
 
-# I don't know why, but for any reason /sbin isn't in $PATH bed default.
+# I don't know why, but for any reason /sbin isn't in $PATH by default.
 # Let's fix this!
 PATH="/sbin:${PATH}"
 
