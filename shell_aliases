@@ -1,5 +1,4 @@
-# mac uses -G, linux uses --color for colored output of ls
-[[ "`uname`" == 'Darwin' ]] && alias ls='ls -G' || alias ls='ls --color=auto'
+alias ls='ls --color=auto'
 
 #alias dir='dir --color=auto'
 #alias vdir='vdir --color=auto'
@@ -18,7 +17,6 @@ alias cd..='cd ..'
 alias ...='cd ../..'
 
 alias vi=vim
-alias gvim=mvim
 
 alias bpython2.7='PYTHONPATH=~/repos/cloneonly/bpython python2.7 -m bpython.cli'
 alias bpython2.6='PYTHONPATH=~/repos/cloneonly/bpython python2.6 -m bpython.cli'
