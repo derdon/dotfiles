@@ -11,17 +11,16 @@ let no_buffers_menu=1
 set mousemodel=popup
 
 " Enable Syntax Colors
-"  in GUI mode we go with fruity and Monaco 13
-"  in CLI mode desert looks better (fruity is GUI only)
 syntax on
 if has("gui_running")
   colorscheme molokai
-  set guifont=Consolas:h13
+  set guifont="Deja Vu Sans Mono"
   "set fuoptions=maxvert,maxhorz
   "au GUIEnter * set fullscreen
   " change working directory automatically
   set autochdir
 else
+  " in CLI mode desert looks better (fruity is GUI only)
   colorscheme desert
 
   " enable rainbow parens; works only in vim, not gvim!
