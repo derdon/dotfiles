@@ -17,4 +17,5 @@ PATH="${PATH}:${GOROOT}/bin:${EXTGO}/bin:${OWNGO}/bin"
 
 export PATH
 
-export LC_ALL=LANG="en_US.utf8"
+export LC_ALL="en_US.utf8"
+export LANG="en_US.utf8"
