@@ -38,4 +38,4 @@ PATH=${GAE_PATH}:${PATH}
 
 export PATH
 
-export LANG="de_DE.utf8"
+export LC_ALL=LANG="en_US.utf8"
