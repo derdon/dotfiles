@@ -139,6 +139,22 @@ cnoreabbr <expr> bq 'BufClose'
 " Copy to Lodgeit on ^d
 map <C-d> :Lodgeit<CR>
 
+" Omni Complete (copied from https://gist.github.com/1354671)
+set ofu=syntaxcomplete#Complete
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType go set omnifunc=gocomplete#Complete
+autocmd FileType golang set omnifunc=gocomplete#Complete
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType java set completefunc=javacomplete#CompleteParamsInfo
+autocmd FileType java set omnifunc=javacomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType ruby set omnifunc=rubycomplete#Complete
+autocmd FileType sql set omnifunc=sqlcomplete#Complete
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+
+
 " python support
 " --------------
 "  don't highlight exceptions and builtins. I love to override them in local
@@ -158,6 +174,7 @@ autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " go support
 " ----------
+set rtp+=$GOROOT/misc/vim
 autocmd BufNewFile,BufRead *.go setlocal ft=go
 "autocmd FileType go setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4
 
@@ -231,10 +248,6 @@ nmap <silent><Leader>m <Esc>:Pytest method<CR>
 " LaTeX-Suite START
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
 filetype plugin on
-
-" IMPORTANT: win32 users will need to have 'shellslash' set so that latex
-" can be called correctly.
-set shellslash
 
 " IMPORTANT: grep will sometimes skip displaying the file name if you
 " search in a singe file. This will confuse Latex-Suite. Set your grep
