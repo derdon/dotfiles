@@ -51,12 +51,15 @@ filetype plugin on
 let mapleader=","
 let maplocalleader="\\"
 
-" activate a permanent ruler and disable Toolbar, and add line
-" highlightng as well as numbers.
+" activate a permanent ruler and disable toolbar, menubar and right scroll
+" bar. Also, add line highlightng as well as numbers.
 " And disable the sucking pydoc preview window for the omni completion
 " also highlight current line and disable the blinking cursor.
 set ruler
 set guioptions-=T
+set guioptions-=m
+set guioptions-=r
+set guioptions-=L
 set completeopt-=preview
 set gcr=a:blinkon0
 if has("gui_running")
