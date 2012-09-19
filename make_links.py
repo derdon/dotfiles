@@ -22,6 +22,8 @@ def get_ln_paths(exclude):
         target = os.path.abspath(filename)
         link_name = os.path.expanduser('~/.{}'.format(filename))
         yield target, link_name
+    # "special" path, therefore it must be yielded seperately
+    yield 'i3' os.path.expanduser('~/.config/i3/config')
 
 
 def main():
