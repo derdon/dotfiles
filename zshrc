@@ -40,3 +40,8 @@ compctl -g "*.go" gofmt
 # gccgo
 compctl -g "*.go" gccgo
 # end of paste
+
+goloc() {
+	echo "*.go files: $(wc -l ?(^*_test).go | tail -n 1 | awk '{print $1}') lines"
+	echo "*_test.go files: $(wc -l *_test.go | tail -n 1 | awk '{print $1}') lines"
+}
