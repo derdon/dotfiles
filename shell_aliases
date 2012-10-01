@@ -19,21 +19,6 @@ alias ...='cd ../..'
 
 alias vi=vim
 
-alias bpython2.7='PYTHONPATH=~/repos/cloneonly/bpython python2.7 -m bpython.cli'
-alias bpython2.6='PYTHONPATH=~/repos/cloneonly/bpython python2.6 -m bpython.cli'
-alias bpython3.1='PYTHONPATH=~/repos/cloneonly/bpython python3.1 -m bpython.cli'
-#alias bpython=bpython2.7
-alias bpython='bpython-urwid'
-
-alias go-repl='rlwrap repl'
-
-alias get_wtfpl='wget http://sam.zoy.org/wtfpl/COPYING'
-alias get_distribute_setup.py='wget http://python-distribute.org/distribute_setup.py'
-
-alias sync_music='unison Music/songbird/ /Volumes/Daten/Musik -auto -perms 0 -ignore "Name .DS_Store"'
-
-alias init_project='touch README setup.py MANIFEST.in tox.ini && mkdir test && get_wtfpl'
-
 # do not output the commands being executed
 alias make='make -s'
 
