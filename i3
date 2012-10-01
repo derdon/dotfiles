@@ -74,7 +74,7 @@ bindsym Mod4+space focus mode_toggle
 bindsym Mod4+a focus parent
 
 # focus the child container
-#bindsym Mod4+d focus child
+bindsym Mod4+q focus child
 
 # switch to workspace
 bindsym Mod4+1 workspace 1
