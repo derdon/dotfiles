@@ -28,3 +28,5 @@ alias tree='tree -I \*.pyc'
 # call it if the annoying error message "Unable to update lunar concurrently
 # while installing." on Lunar Linux appears!
 alias kill_lunar_cache='killall -9 lin; killall -9 lget; killall -9 lunar; killall -9 wget'
+
+alias ssh-uni='ssh -i .ssh/id_uni sliedtke@informatik.uni-bremen.de'
