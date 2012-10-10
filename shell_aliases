@@ -19,9 +19,6 @@ alias ...='cd ../..'
 
 alias vi=vim
 
-# do not output the commands being executed
-alias make='make -s'
-
 # filter out *.pyc files in the output of the tree command
 alias tree='tree -I \*.pyc'
 
