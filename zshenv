@@ -1,3 +1,6 @@
+export EDITOR=vim
+export PAGER=less
+
 export WORKON_HOME="~/venvs"
 
 export SHELL="/usr/bin/zsh"

@@ -10,9 +10,6 @@ autoload -Uz vcs_info
 source ~/.zsh/options
 source ~/.zsh/aliases
 
-export EDITOR=vim
-export PAGER=less
-
 HISTFILE=~/.zsh_history
 SAVEHIST=10000
 HISTSIZE=12000
