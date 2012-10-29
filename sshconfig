@@ -1,0 +1,5 @@
+Host uni
+	HostName x12.informatik.uni-bremen.de
+	User sliedtke
+	Port 22
+	IdentityFile ~/.ssh/id_uni
