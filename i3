@@ -115,10 +115,10 @@ mode "resize" {
         # Pressing right will grow the window's width.
         # Pressing up will shrink the window's height.
         # Pressing down will grow the window's height.
-        bindsym j           resize shrink width 5 px or 5 ppt
-        bindsym k           resize grow height 5 px or 5 ppt
-        bindsym l           resize shrink height 5 px or 5 ppt
-        bindsym semicolon   resize grow width 5 px or 5 ppt
+        bindsym h           resize shrink width 1 px or 1 ppt
+        bindsym j           resize grow height 1 px or 1 ppt
+        bindsym k           resize shrink height 1 px or 1 ppt
+        bindsym l           resize grow width 1 px or 1 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left        resize shrink width 5 px or 5 ppt
@@ -133,9 +133,10 @@ mode "resize" {
 
 bindsym Mod4+r mode "resize"
 
-# use the xfce4 panel instead of the i3 status bar
 bar {
-	i3bar_command /usr/bin/xfce4-panel
+    #status_command i3status
+    status_command myi3status
+    mode hide
 }
 
 # make xfce4 pop-ups always appear in floating mode

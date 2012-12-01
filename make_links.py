@@ -16,14 +16,18 @@ EXCLUDE_FILES = [
     'vimprojects',
 ]
 
+special_links = {
+    'i3': os.path.expanduser('~/.config/i3/config'),
+    'sshconfig': os.path.expanduser('~/.ssh/config'),
+}
 
 def get_ln_paths(exclude):
     for filename in ifilterfalse(partial(contains, exclude), os.listdir('.')):
         target = os.path.abspath(filename)
         link_name = os.path.expanduser('~/.{}'.format(filename))
         yield target, link_name
-    # "special" path, therefore it must be yielded seperately
-    yield 'i3' os.path.expanduser('~/.config/i3/config')
+    for target, link_name in special_links.iteritems():
+        yield target, link_name
 
 
 def main():
