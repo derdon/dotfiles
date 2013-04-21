@@ -136,7 +136,7 @@ bindsym Mod4+r mode "resize"
 bar {
     #status_command i3status
     status_command myi3status
-    mode hide
+    mode dock
 }
 
 # make xfce4 pop-ups always appear in floating mode
