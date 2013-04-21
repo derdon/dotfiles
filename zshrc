@@ -22,4 +22,4 @@ precmd() {
 }
 
 trailing_color=$( [[ `whoami` == 'root' ]] && echo 'red' || echo 'green' )
-PS1="%F{magenta}%~%f%(1v.%F{green}%1v%f.)%F{$trailing_color}%#%f "
+PS1="%F{magenta}%2~%f%(1v.%F{green}%1v%f.)%F{$trailing_color}%#%f "
