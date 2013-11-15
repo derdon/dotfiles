@@ -3,9 +3,3 @@ Host uni
 	User sliedtke
 	Port 22
 	IdentityFile ~/.ssh/id_uni
-
-Host jansserver
-	HostName 188.120.255.13
-	User simon
-	Port 47005
-	IdentityFile ~/.ssh/id_jan
