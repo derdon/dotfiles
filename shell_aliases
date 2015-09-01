@@ -1,3 +1,7 @@
+# this is shell syntax for wtf
+# (source: https://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo):
+alias sudo='sudo '
+
 alias ls='ls --color=auto'
 
 #alias dir='dir --color=auto'
