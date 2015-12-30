@@ -1,0 +1,28 @@
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+
+# list of (additional) programs to restore: alsamixer, ipython, ghci
+set -g @resurrect-processes 'alsamixer "/usr/lib/ghc/bin/ghc -B/usr/lib/ghc --interactive" -> ghci "/usr/bin/python /usr/local/bin/ipython" -> ipython'
+
+# omit the square brackets around the session name
+set-window-option -g status-left " #S  "
+set-window-option -g status-left-fg black
+set-window-option -g status-left-bg green
+
+# display only time, neither date nor computer name
+set-window-option -g status-right "%H:%M"
+
+# add some spaces for better readability
+set-window-option -g window-status-format " #I: #W "
+
+# add some spaces around the current active window as well and
+# highlight it by inverting the foreground/background colors
+set-window-option -g window-status-current-format " #I: #W "
+set-window-option -g window-status-current-fg green
+set-window-option -g window-status-current-bg black
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'

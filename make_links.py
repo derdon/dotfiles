@@ -19,6 +19,7 @@ EXCLUDE_FILES = [
 special_links = {
     'i3': os.path.expanduser('~/.config/i3/config'),
     'sshconfig': os.path.expanduser('~/.ssh/config'),
+    'tmuxconf': os.path.expanduser('~/.tmux.conf'),
 }
 
 def get_ln_paths(exclude):
