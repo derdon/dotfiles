@@ -14,6 +14,9 @@ export GOPATH="${EXTGO}:${OWNGO}"
 # for the binaries from the Go project
 PATH="${PATH}:${GOROOT}/bin:${EXTGO}/bin:${OWNGO}/bin"
 
+# for custom misc. binaries
+PATH="${PATH}:${HOME}/.local/bin"
+
 export PATH
 
 export LC_ALL="en_US.utf8"
