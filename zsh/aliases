@@ -2,5 +2,4 @@ source ~/.shell_aliases
 
 hash -d p=~/python
 hash -d wise=~/Dropbox/Dokumente/uni/WiSe12-13
-
-hash -d csgo="~/.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/csgo"
+hash -d csgo=~/.local/share/Steam/steamapps/common/Counter-Strike\ Global\ Offensive/csgo
