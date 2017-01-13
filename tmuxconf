@@ -2,6 +2,8 @@
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 
+set -g @plugin 'tmux-plugins/tmux-battery'
+
 set -g @plugin 'tmux-plugins/tmux-resurrect'
 
 # list of (additional) programs to restore: alsamixer, ipython, ghci
@@ -13,7 +15,8 @@ set-window-option -g status-left-fg black
 set-window-option -g status-left-bg green
 
 # display only time, neither date nor computer name
-set-window-option -g status-right "%H:%M"
+# also include battery status
+set-window-option -g status-right "#{battery_icon} #{battery_percentage} • %H:%M"
 
 # add some spaces for better readability
 set-window-option -g window-status-format " #I: #W "
