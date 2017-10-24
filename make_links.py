@@ -14,10 +14,12 @@ EXCLUDE_FILES = [
     '.gitignore',
     'README',
     'vimprojects',
+    'csgo',
+    'hgrc',
 ]
 
 special_links = {
-    'i3': os.path.expanduser('~/.config/i3/config'),
+    # 'i3': os.path.expanduser('~/.config/i3/config'),
     'sshconfig': os.path.expanduser('~/.ssh/config'),
     'tmuxconf': os.path.expanduser('~/.tmux.conf'),
 }
